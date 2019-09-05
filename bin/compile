@@ -19,7 +19,7 @@ mkdir -p $jq_dir/bin
 
 # Download jq
 status "Download and vendor jq"
-jq_url="https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64"
+jq_url="https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64"
 curl $jq_url -s -L -o $jq_dir/bin/jq
 chmod +x $jq_dir/bin/jq
 
