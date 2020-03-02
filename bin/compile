@@ -25,6 +25,6 @@ chmod +x $jq_dir/bin/jq
 
 mkdir -p $build_dir/.profile.d
 echo 'PATH=$PATH:$HOME/vendor/jq/bin' > $build_dir/.profile.d/jq.sh
-echo "export PATH=$build_dir/vendor/jq/bin" > $bp_dir/export
+echo "export PATH=\"$build_dir/vendor/jq/bin\"" > $bp_dir/export
 echo "$cache_dir/export"
 echo $(cat $bp_dir/export)
